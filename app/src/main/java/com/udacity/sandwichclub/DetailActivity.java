@@ -81,10 +81,10 @@ public class DetailActivity extends AppCompatActivity {
         //Populate Single Text Entries:
         if (!sandwich.getPlaceOfOrigin().isEmpty())
             origin.setText(sandwich.getPlaceOfOrigin());
-        else
+        else {
             origin.setVisibility(View.GONE);
             originLabel.setVisibility(View.GONE);
-
+        }
         if (!sandwich.getPlaceOfOrigin().isEmpty())
             description.setText(sandwich.getDescription());
         else {
